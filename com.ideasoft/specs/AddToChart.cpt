@@ -1,0 +1,17 @@
+ # url adresine gidilerek ürün aratılır.
+    *"//input[@placeholder='Aramak istediğiniz ürünü yazınız']" xpath'li elemente "ürün" değerini yaz
+ # Enter tusuna basılır
+    * Enter tusuna bas
+ # Ürün detayına gidilir.
+    *"//img[@class='lazyload' and @alt='test ürünüdür']" xpath'li elemente tıkla
+ # Ürün doğrulanır.
+    *Elementi "//div[@class='product-title']" bul ve "test ürünüdür" değerini kontrol et
+ # Ürün adedi 5 yapılır
+    *"qty-input" İd'li elemente "5" değerini yaz
+ # Ürün sepete eklenir.
+    *"//a[@class='add-to-cart-button']" xpath'li elemente tıkla
+ # Sepete ekleme işlemi doğrulanır.
+    *Sepete ekle mesajının text'i kontrol edilir.
+ # 5 adet ürünün eklendiği doğrulanır.
+    *Elementi "//input[@data-stocktype='Piece']" bul ve "5" degerini kontrol et
+

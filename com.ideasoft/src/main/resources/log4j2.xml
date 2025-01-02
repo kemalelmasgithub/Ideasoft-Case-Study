@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1} - %m%n">
+                <PatternSelector>
+                    <PatternMatch key="INFO" pattern="%highlight{INFO}"/>
+                    <PatternMatch key="WARN" pattern="%highlight{WARN, red}"/>
+                    <PatternMatch key="ERROR" pattern="%highlight{ERROR, red}"/>
+                    <PatternMatch key="DEBUG" pattern="%highlight{DEBUG, yellow}"/>
+                    <PatternMatch key="TRACE" pattern="%highlight{TRACE, blue}"/>
+                    <PatternMatch key="FATAL" pattern="%highlight{FATAL, red, bold}"/>
+                </PatternSelector>
+            </PatternLayout>
+        </Console>
+    </Appenders>
+    <Loggers>
+        <Root level="info">
+            <AppenderRef ref="Console"/>
+        </Root>
+    </Loggers>
+</Configuration>
